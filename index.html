@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sito del pittore</title>
+<meta name="description" id="meta-descrizione" content="Opere, biografia, esposizioni, cataloghi e critiche.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2326201c'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23c08a2e' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23a8522e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/stile.css">
+</head>
+<body>
+<div class="texture" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===================== NAVIGAZIONE ===================== -->
+<header>
+  <div class="navbar">
+    <nav>
+      <a class="brand" href="#home"><b id="marca-nome">—</b><i id="marca-ruolo"></i></a>
+      <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false"><i></i><i></i><i></i></button>
+      <ul class="links" id="links">
+        <li><a href="#opere">Opere</a></li>
+        <li><a href="#biografia">Biografia</a></li>
+        <li><a href="#esposizioni">Esposizioni</a></li>
+        <li><a href="#critiche">Critiche</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="rule4" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</header>
+
+<main>
+<!-- ===================== APERTURA ===================== -->
+<div class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" id="a-occhiello"></p>
+      <h1><span id="a-titolo"></span> <em id="a-titolo-corsivo"></em></h1>
+      <p class="intro" id="a-intro"></p>
+      <div class="cta">
+        <a class="btn btn-full" href="#opere" id="a-pulsante1">Sfoglia le opere</a>
+        <a class="btn btn-line" href="#contatti" id="a-pulsante2">Richiedi informazioni</a>
+      </div>
+    </div>
+    <!-- schizzo di colore: disegnato dallo script, diverso a ogni visita (un clic lo rifà) -->
+    <svg class="emblem" id="splash" viewBox="0 0 400 400" role="img" aria-label="Schizzo di colore"
+         title="Clicca per un nuovo schizzo"></svg>
+  </div>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <p id="cit-testo"></p>
+    <p style="text-align:center"><span id="cit-autore"></span></p>
+  </div>
+</div>
+
+<!-- ===================== OPERE ===================== -->
+<section id="opere" class="solid">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">01</div>
+      <div><small>Galleria</small><h2>Le opere</h2>
+        <p>Una selezione dei lavori recenti e dei cicli principali. Scegli una tecnica per filtrare la raccolta;
+           tocca un'opera per vederla a tutto schermo.</p></div>
+    </div>
+    <div class="filters rv" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <div class="piu"><button class="btn btn-line" type="button" id="piu" hidden></button></div>
+  </div>
+</section>
+
+<!-- ===================== BIOGRAFIA ===================== -->
+<section id="biografia" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">02</div>
+      <div><small>L'artista</small><h2>Biografia</h2></div>
+    </div>
+    <div class="bio">
+      <div class="portrait rv" id="bio-ritratto"></div>
+      <div class="rv">
+        <p class="lead" id="bio-apertura"></p>
+        <div id="bio-paragrafi"></div>
+        <div class="facts" id="bio-numeri"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ESPOSIZIONI E CATALOGHI ===================== -->
+<section id="esposizioni" class="solid">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">03</div>
+      <div><small>Il percorso</small><h2>Esposizioni e cataloghi</h2>
+        <p>Mostre personali e collettive, cataloghi e pubblicazioni dedicate al lavoro dell'artista.</p></div>
+    </div>
+    <div class="two">
+      <div class="rv">
+        <h3 class="sub">Mostre</h3>
+        <ul class="rows" id="elenco-mostre"></ul>
+      </div>
+      <div class="rv">
+        <h3 class="sub">Cataloghi e pubblicazioni</h3>
+        <div id="elenco-cataloghi"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CRITICHE ===================== -->
+<section id="critiche" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">04</div>
+      <div><small>Testi critici</small><h2>Critiche</h2>
+        <p>Passaggi tratti da recensioni, presentazioni in catalogo e testi dedicati alle opere.</p></div>
+    </div>
+    <div class="quotes" id="elenco-critiche"></div>
+  </div>
+</section>
+
+<!-- ===================== CONTATTI ===================== -->
+<section id="contatti" class="solid">
+  <div class="wrap">
+    <div class="head rv">
+      <div class="num">05</div>
+      <div><small>Scrivimi</small><h2>Contatti</h2>
+        <p>Per informazioni sulle opere, richieste di commissione, inviti a mostre o collaborazioni editoriali.</p></div>
+    </div>
+    <div class="contact">
+      <div class="rv">
+        <p id="con-intro"></p>
+        <ul class="infos">
+          <li><strong>Email</strong><a id="con-email" href="#"></a></li>
+          <li><strong>Studio</strong><span id="con-studio"></span></li>
+          <li><strong>Opere</strong><span id="con-opere"></span></li>
+        </ul>
+      </div>
+      <form id="form" class="rv" novalidate>
+        <input type="hidden" name="access_key" id="chiave" value="">
+        <input type="hidden" name="subject" value="Nuovo messaggio dal sito">
+        <input type="hidden" name="from_name" id="mittente" value="Sito">
+        <input type="text" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field"><label for="n">Nome e cognome</label><input id="n" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="e">Email</label><input id="e" type="email" name="email" required autocomplete="email"></div>
+        <div class="field"><label for="o">Oggetto</label><input id="o" name="oggetto" placeholder="Informazioni su un'opera, invito, altro…"></div>
+        <div class="field"><label for="m">Messaggio</label><textarea id="m" name="message" required></textarea></div>
+        <button class="btn btn-full" type="submit" id="send">Invia messaggio</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+        <p class="privacy">I dati inseriti sono usati unicamente per rispondere alla richiesta.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="rule4" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<footer>
+  <div class="fm" aria-hidden="true"></div>
+  <p>© <span id="y"></span> <span id="pie-nome"></span></p>
+  <p>Tutte le immagini delle opere sono protette da diritto d'autore.</p>
+</footer>
+
+<!-- ===================== INGRANDIMENTO ===================== -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Opera ingrandita">
+  <button class="x" id="lbx" aria-label="Chiudi">×</button>
+  <button class="prev" id="lbp" aria-label="Opera precedente">‹</button>
+  <button class="next" id="lbn" aria-label="Opera successiva">›</button>
+  <img class="pic" id="lbpic" alt="">
+  <div class="cap" id="lbcap"></div>
+</div>
+
+<script src="assets/sito.js"></script>
+</body>
+</html>

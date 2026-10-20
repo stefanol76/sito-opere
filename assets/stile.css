@@ -1,0 +1,271 @@
+/* ===========================================================
+   PALETTE — toni caldi e smorzati, di sapore anni 70
+   =========================================================== */
+:root{
+  --ink:#26201c;         /* testo e fondi scuri   */
+  --ink-soft:#4a403a;
+  --bone:#f2ece1;        /* fondo chiaro          */
+  --paper:#e8e0d2;       /* fondo sezioni alterne */
+  --line:#c9bda9;        /* filetti               */
+  --terra:#a8522e;       /* accento principale    */
+  --ochre:#bf8c2c;       /* accento secondario    */
+  --olive:#5e6a44;
+  --teal:#2f5752;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bone);color:var(--ink);
+  font-family:'Karla',system-ui,sans-serif;font-weight:400;font-size:17.5px;line-height:1.78;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Bitter',Georgia,serif;font-weight:500;line-height:1.14;letter-spacing:-.005em}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 30px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ===========================================================
+   SFONDO — strumenti del dipingere in filigrana
+   -----------------------------------------------------------
+   Qui sotto c'è un disegno al tratto (pennelli, tavolozza,
+   tubetto, barattolo, matita, tela) che resta fisso dietro
+   tutte le sezioni, appena percettibile.
+
+   >>> PER USARE FOTOGRAFIE VERE:
+   1. carica le tue foto nella cartella del sito, es. "sfondi/pennelli.jpg"
+   2. in .texture sostituisci tutto il background-image con:
+         background-image:url('sfondi/pennelli.jpg');
+         background-size:cover; background-position:center;
+   3. regola l'opacità fra .06 e .12 — oltre, il testo diventa
+      faticoso da leggere.
+   Si possono anche dare foto diverse alle singole sezioni:
+   vedi le classi .bg-a / .bg-b / .bg-c più in basso.
+   =========================================================== */
+.texture{
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.085;
+  background-repeat:repeat;background-size:660px auto;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='660' height='660' viewBox='0 0 660 660'%3E%3Cg fill='none' stroke='%2326201c' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(48,86) rotate(-24)'%3E%3Crect x='0' y='0' width='156' height='13' rx='6.5'/%3E%3Crect x='156' y='-4' width='30' height='21' rx='3'/%3E%3Cpath d='M186 -4 l38 10.5 -38 10.5 z'/%3E%3C/g%3E%3Cg transform='translate(430,70)'%3E%3Cellipse cx='74' cy='48' rx='74' ry='48'/%3E%3Ccircle cx='104' cy='62' r='12'/%3E%3Ccircle cx='42' cy='33' r='9'/%3E%3Ccircle cx='70' cy='25' r='9'/%3E%3Ccircle cx='98' cy='31' r='9'/%3E%3Ccircle cx='31' cy='58' r='9'/%3E%3C/g%3E%3Cg transform='translate(86,352) rotate(10)'%3E%3Crect x='0' y='0' width='128' height='42' rx='9'/%3E%3Cpath d='M14 0 v42 M27 0 v42'/%3E%3Cpath d='M128 9 h15 v24 h-15'/%3E%3Crect x='143' y='5' width='19' height='32' rx='4'/%3E%3C/g%3E%3Cg transform='translate(452,330)'%3E%3Cpath d='M12 64 h92 l-9 92 h-74 z'/%3E%3Cpath d='M12 64 h92'/%3E%3Cpath d='M34 64 l7 -76 M58 64 l1 -90 M80 64 l-9 -66'/%3E%3Cpath d='M38 -12 l6 -12 M58 -26 l2 -12 M70 -2 l-4 -12'/%3E%3C/g%3E%3Cg transform='translate(250,540) rotate(-12)'%3E%3Crect x='0' y='0' width='116' height='15' rx='3'/%3E%3Cpath d='M116 0 l28 7.5 -28 7.5 z'/%3E%3Cpath d='M136 4 l0 7'/%3E%3C/g%3E%3Cg transform='translate(486,520)'%3E%3Crect x='0' y='0' width='104' height='80' rx='2'/%3E%3Crect x='9' y='9' width='86' height='62' rx='1'/%3E%3Cpath d='M18 92 l16 -12 M86 92 l-16 -12 M52 80 v20'/%3E%3C/g%3E%3Cg transform='translate(236,210) rotate(38)'%3E%3Crect x='0' y='0' width='140' height='11' rx='5.5'/%3E%3Crect x='140' y='-4' width='27' height='19' rx='3'/%3E%3Cpath d='M167 -4 l34 9.5 -34 9.5 z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/* grana leggerissima, per l'effetto stampa d'epoca */
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* le sezioni stanno sopra lo sfondo */
+header,main,footer,.hero{position:relative;z-index:2}
+section{position:relative;z-index:2}
+
+/* fondi semitrasparenti, così la filigrana resta visibile */
+section.alt{background:rgba(232,224,210,.82)}
+section.solid{background:rgba(242,236,225,.78)}
+
+/* >>> FOTO DIVERSE PER SINGOLA SEZIONE (facoltativo)
+   togli i commenti e indica le tue immagini
+.bg-a::before,.bg-b::before,.bg-c::before{
+  content:"";position:absolute;inset:0;z-index:-1;opacity:.1;
+  background-size:cover;background-position:center}
+.bg-a::before{background-image:url('sfondi/pennelli.jpg')}
+.bg-b::before{background-image:url('sfondi/tavolozza.jpg')}
+.bg-c::before{background-image:url('sfondi/colori.jpg')}
+*/
+
+/* ===========================================================
+   NAVIGAZIONE
+   =========================================================== */
+header{position:sticky;top:0;z-index:100}
+.navbar{background:var(--ink);color:var(--bone)}
+nav{max-width:var(--maxw);margin:0 auto;padding:17px 30px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.brand b{font-family:'Bitter',serif;font-weight:500;font-size:1.2rem;letter-spacing:.01em}
+.brand i{font-style:normal;text-transform:uppercase;letter-spacing:.26em;font-size:.6rem;color:var(--ochre);font-weight:600}
+.links{display:flex;gap:30px;list-style:none}
+.links a{text-decoration:none;text-transform:uppercase;letter-spacing:.17em;font-size:.7rem;font-weight:600;
+  padding-bottom:5px;border-bottom:1.5px solid transparent;transition:.2s;white-space:nowrap;color:rgba(242,236,225,.82)}
+.links a:hover,.links a.active{color:var(--bone);border-color:var(--ochre)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
+.burger i{display:block;width:25px;height:2px;background:var(--bone);margin:6px 0;transition:.25s}
+.burger.on i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger.on i:nth-child(2){opacity:0}
+.burger.on i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+/* filetto a quattro tinte: unico richiamo cromatico esplicito agli anni 70 */
+.rule4{height:4px;display:flex}
+.rule4 i{flex:1}
+.rule4 i:nth-child(1){background:var(--ochre)}
+.rule4 i:nth-child(2){background:var(--terra)}
+.rule4 i:nth-child(3){background:var(--olive)}
+.rule4 i:nth-child(4){background:var(--teal)}
+
+/* ===========================================================
+   APERTURA
+   =========================================================== */
+.hero{padding:clamp(70px,11vw,132px) 0 clamp(60px,9vw,104px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,70px);align-items:center}
+.eyebrow{display:flex;align-items:center;gap:14px;text-transform:uppercase;letter-spacing:.3em;font-size:.68rem;
+  font-weight:600;color:var(--terra);margin-bottom:26px}
+.eyebrow::before{content:"";width:52px;height:1.5px;background:var(--terra)}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.5rem);font-weight:400;max-width:13ch}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .intro{max-width:46ch;margin:28px 0 36px;font-size:clamp(1rem,2vw,1.12rem);color:var(--ink-soft)}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;text-decoration:none;text-transform:uppercase;letter-spacing:.17em;
+  font-size:.72rem;font-weight:600;font-family:'Karla',sans-serif;cursor:pointer;border:1.5px solid var(--ink);transition:.22s}
+.btn-full{background:var(--ink);color:var(--bone)}
+.btn-full:hover{background:var(--terra);border-color:var(--terra)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--bone)}
+.emblem{width:100%;max-width:410px;margin-inline:auto;cursor:pointer;filter:saturate(.92)}
+.emblem *{mix-blend-mode:multiply}
+
+/* citazione d'apertura */
+.band{background:var(--ink);color:var(--bone);padding:clamp(34px,5vw,52px) 0;position:relative;z-index:2}
+.band p{max-width:720px;margin:0 auto;text-align:center;font-family:'Bitter',serif;font-style:italic;
+  font-size:clamp(1.08rem,2.4vw,1.42rem);line-height:1.55}
+.band span{display:block;margin-top:16px;font-family:'Karla',sans-serif;font-style:normal;
+  text-transform:uppercase;letter-spacing:.22em;font-size:.68rem;font-weight:600;color:var(--ochre)}
+
+/* ===========================================================
+   INTESTAZIONI DI SEZIONE
+   =========================================================== */
+section{padding:clamp(66px,9vw,112px) 0}
+.head{margin-bottom:clamp(38px,5.5vw,62px);border-top:1px solid var(--line);padding-top:26px;
+  display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.head .num{font-family:'Bitter',serif;font-size:.9rem;color:var(--ochre);letter-spacing:.1em;padding-top:8px}
+.head small{display:block;text-transform:uppercase;letter-spacing:.28em;font-size:.68rem;font-weight:600;color:var(--terra);margin-bottom:12px}
+.head h2{font-size:clamp(1.9rem,4.6vw,2.9rem);font-weight:400}
+.head p{margin-top:14px;max-width:62ch;color:var(--ink-soft);font-size:1rem}
+
+/* ===========================================================
+   GALLERIA
+   =========================================================== */
+.filters{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:40px;border-bottom:1px solid var(--line);padding-bottom:16px}
+.filters button{background:none;border:0;border-bottom:2px solid transparent;color:var(--ink-soft);padding:4px 0;cursor:pointer;
+  font-family:'Karla',sans-serif;font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;font-weight:600;transition:.2s}
+.filters button:hover{color:var(--ink)}
+.filters button.on{color:var(--ink);border-color:var(--terra)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:clamp(26px,3.4vw,46px)}
+.card{background:none;border:0;padding:0;text-align:left;font:inherit;color:inherit;cursor:pointer;display:block}
+.frame{position:relative;aspect-ratio:4/5;overflow:hidden;background-size:cover;background-position:center;
+  border:1px solid var(--line);transition:.35s ease;box-shadow:0 1px 0 rgba(38,32,28,.06)}
+.card:hover .frame{box-shadow:0 16px 34px -18px rgba(38,32,28,.55);transform:translateY(-5px);border-color:var(--ink)}
+.card:focus-visible .frame{outline:2px solid var(--terra);outline-offset:3px}
+.frame img{width:100%;height:100%;object-fit:cover;display:block;background:var(--paper)}
+.frame::after{content:"";position:absolute;inset:0;background:rgba(38,32,28,.26);opacity:0;transition:.35s;z-index:1}
+.card:hover .frame::after{opacity:1}
+.frame .look{position:absolute;inset:auto 0 22px 0;text-align:center;color:#fff;text-transform:uppercase;
+  letter-spacing:.2em;font-size:.66rem;font-weight:600;opacity:0;transform:translateY(8px);transition:.35s;z-index:2}
+.card:hover .look,.card:focus-visible .look{opacity:1;transform:none}
+.piu{display:flex;justify-content:center;margin-top:clamp(34px,4vw,52px)}
+.piu button[hidden]{display:none}
+.card h3{font-size:1.1rem;font-weight:500;margin:18px 0 5px}
+.card p{font-size:.8rem;text-transform:uppercase;letter-spacing:.11em;color:var(--ink-soft)}
+
+/* ingrandimento */
+.lb{position:fixed;inset:0;z-index:300;background:rgba(26,21,18,.97);display:none;flex-direction:column;
+  align-items:center;justify-content:center;padding:74px 22px 36px}
+.lb.open{display:flex}
+.lb .pic{width:min(92vw,1400px);height:72vh;object-fit:contain;display:block}
+.lb .cap{color:var(--bone);text-align:center;margin-top:22px;max-width:620px}
+.lb .cap h3{font-size:1.5rem;font-weight:400}
+.lb .cap p{font-size:.78rem;text-transform:uppercase;letter-spacing:.17em;color:var(--ochre);margin-top:8px}
+.lb button{position:absolute;background:none;border:0;color:rgba(242,236,225,.75);cursor:pointer;line-height:1;transition:.2s}
+.lb button:hover{color:var(--bone)}
+.lb .x{top:24px;right:28px;font-size:2.2rem}
+.lb .prev,.lb .next{top:50%;transform:translateY(-50%);font-size:2.6rem;padding:14px}
+.lb .prev{left:12px}.lb .next{right:12px}
+
+/* ===========================================================
+   BIOGRAFIA
+   =========================================================== */
+.bio{display:grid;grid-template-columns:320px 1fr;gap:clamp(34px,5.5vw,70px);align-items:start}
+.portrait{aspect-ratio:3/4;border:1px solid var(--line);background-size:cover;background-position:center;
+  background-color:var(--paper);box-shadow:0 18px 40px -26px rgba(38,32,28,.6)}
+.portrait figcaption{display:none}
+.bio .lead{font-family:'Bitter',serif;font-size:clamp(1.15rem,2.5vw,1.42rem);line-height:1.5;color:var(--ink);margin-bottom:24px}
+.bio p+p{margin-top:16px;color:var(--ink-soft)}
+.facts{display:flex;gap:46px;flex-wrap:wrap;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.facts strong{display:block;font-family:'Bitter',serif;font-size:2rem;font-weight:400;color:var(--terra)}
+.facts span{font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;color:var(--ink-soft)}
+
+/* ===========================================================
+   ESPOSIZIONI E CATALOGHI
+   =========================================================== */
+.two{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,5vw,78px)}
+.sub{font-size:1.18rem;font-weight:500;text-transform:uppercase;letter-spacing:.13em;margin-bottom:26px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.rows{list-style:none}
+.rows li{display:grid;grid-template-columns:76px 1fr;gap:20px;padding:19px 0;border-bottom:1px solid var(--line);transition:.2s}
+.rows li:hover{background:rgba(191,140,44,.09)}
+.rows .yr{font-family:'Bitter',serif;color:var(--terra);font-size:1.02rem;padding-top:2px}
+.rows h3{font-size:1.04rem;font-weight:500;margin-bottom:3px}
+.rows p{font-size:.9rem;color:var(--ink-soft)}
+.rows .tag{display:inline-block;margin-top:7px;font-size:.62rem;text-transform:uppercase;letter-spacing:.16em;
+  font-weight:600;color:var(--ink-soft);border:1px solid var(--line);padding:3px 9px}
+.cat{display:flex;gap:18px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line)}
+.cat .cov{flex:0 0 50px;height:66px;border:1px solid var(--line);background:linear-gradient(170deg,var(--paper),#d8ccb6);position:relative}
+.cat .cov::after{content:"";position:absolute;left:7px;right:7px;top:10px;height:2px;background:var(--terra);opacity:.65;
+  box-shadow:0 8px 0 rgba(191,140,44,.6),0 16px 0 rgba(94,106,68,.5)}
+.cat h3{font-size:1rem;font-weight:500}
+.cat p{font-size:.86rem;color:var(--ink-soft)}
+
+/* ===========================================================
+   CRITICHE
+   =========================================================== */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(26px,3vw,40px)}
+blockquote{border-left:2px solid var(--terra);padding:4px 0 4px 26px}
+blockquote p{font-family:'Bitter',serif;font-style:italic;font-size:1.06rem;line-height:1.62}
+blockquote cite{display:block;margin-top:18px;font-style:normal;font-size:.68rem;text-transform:uppercase;
+  letter-spacing:.17em;font-weight:600;color:var(--ink-soft)}
+blockquote:nth-child(3n+2){border-color:var(--ochre)}
+blockquote:nth-child(3n){border-color:var(--teal)}
+
+/* ===========================================================
+   CONTATTI
+   =========================================================== */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,5vw,70px);align-items:start}
+.infos{list-style:none;margin-top:28px}
+.infos li{padding:15px 0;border-bottom:1px solid var(--line)}
+.infos strong{display:block;font-size:.66rem;text-transform:uppercase;letter-spacing:.2em;color:var(--terra);margin-bottom:3px}
+form{display:grid;gap:20px}
+.field label{display:block;text-transform:uppercase;letter-spacing:.17em;font-size:.66rem;font-weight:600;margin-bottom:8px;color:var(--ink-soft)}
+input,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);background:rgba(242,236,225,.85);
+  font-family:'Karla',sans-serif;font-size:1rem;color:var(--ink);transition:.18s}
+input:focus,textarea:focus{outline:none;border-color:var(--terra);background:#fff}
+textarea{min-height:168px;resize:vertical}
+.hp{position:absolute;left:-9999px;opacity:0}
+#msg{font-size:.92rem;font-weight:600;min-height:1.6em}
+#msg.ok{color:var(--olive)}#msg.err{color:var(--terra)}
+.privacy{font-size:.78rem;color:var(--ink-soft)}
+
+footer{background:var(--ink);color:rgba(242,236,225,.78);padding:52px 30px 40px;text-align:center}
+footer .fm{width:38px;height:38px;margin:0 auto 20px;border:1px solid var(--ochre);border-radius:50%;position:relative}
+footer .fm::after{content:"";position:absolute;inset:11px;background:var(--terra);border-radius:50%}
+footer p{font-size:.8rem;letter-spacing:.05em}
+footer p+p{margin-top:8px;opacity:.65}
+
+/* comparsa discreta */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ===========================================================
+   SCHERMI PICCOLI
+   =========================================================== */
+@media(max-width:940px){
+  .hero .wrap,.bio,.two,.contact{grid-template-columns:1fr}
+  .emblem{max-width:260px;order:-1}
+  .portrait{max-width:300px}
+}
+@media(max-width:760px){
+  body{font-size:17px}
+  .burger{display:block}
+  .links{position:absolute;top:100%;left:0;right:0;background:var(--ink);flex-direction:column;gap:0;
+    padding:0 30px;max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .links.open{max-height:340px;padding:8px 30px 22px}
+  .links a{display:block;padding:12px 0;font-size:.78rem;border-bottom:1px solid rgba(242,236,225,.14)}
+  .head{grid-template-columns:1fr;gap:10px}
+  .head .num{padding-top:0}
+  .lb .pic{height:52vh}
+  .lb .prev,.lb .next{font-size:2rem}
+  .texture{background-size:470px auto;opacity:.07}
+}
+@media print{.texture,.grain,header,.lb,footer{display:none}body{background:#fff}}

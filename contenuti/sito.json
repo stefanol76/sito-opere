@@ -1,0 +1,38 @@
+{
+  "nome": "Nome Cognome",
+  "ruolo": "Pittore",
+  "descrizione_sito": "Sito ufficiale del pittore Nome Cognome: galleria delle opere, biografia, esposizioni, cataloghi, critiche e contatti.",
+  "apertura": {
+    "occhiello": "Opere originali · dal [anno]",
+    "titolo": "La pittura come",
+    "titolo_corsivo": "forma del tempo",
+    "introduzione": "Il lavoro di Nome Cognome attraversa [numero] anni di ricerca sul colore e sulla materia: olio, acrilico e tecniche miste, tra paesaggio interiore e osservazione del reale.",
+    "pulsante1": "Sfoglia le opere",
+    "pulsante2": "Richiedi informazioni"
+  },
+  "citazione": {
+    "testo": "[Una frase tua, o di un critico, che racconti in due righe il senso del tuo lavoro.]",
+    "autore": "Nome Cognome"
+  },
+  "biografia": {
+    "ritratto": "",
+    "apertura": "Nato a [città] nel [anno], vive e lavora a [città]. La pittura è il mezzo con cui ordino ciò che osservo e ciò che ricordo.",
+    "paragrafi": [
+      "[Primo paragrafo: la formazione, i maestri e gli incontri determinanti, l'approdo alla pittura.]",
+      "[Secondo paragrafo: i materiali e il metodo di lavoro, i cicli di opere, i temi ricorrenti.]",
+      "[Terzo paragrafo: la ricerca attuale e ciò che desideri lasciare a chi guarda i tuoi quadri.]"
+    ],
+    "numeri": [
+      { "valore": "[XX]", "etichetta": "Anni di attività" },
+      { "valore": "[XX]", "etichetta": "Esposizioni" },
+      { "valore": "[XX]", "etichetta": "Opere in collezioni" }
+    ]
+  },
+  "contatti": {
+    "introduzione": "Compila il modulo: il messaggio arriverà direttamente nella mia casella di posta e riceverai risposta di norma entro pochi giorni.",
+    "email": "tua@email.it",
+    "studio": "[indirizzo o città] — visite su appuntamento",
+    "nota_opere": "Disponibilità e quotazioni su richiesta",
+    "chiave_web3forms": "INSERISCI_LA_TUA_ACCESS_KEY"
+  }
+}

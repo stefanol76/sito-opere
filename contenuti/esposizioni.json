@@ -1,0 +1,14 @@
+{
+  "mostre": [
+    { "anno": "2025", "titolo": "Titolo della mostra", "sede": "Galleria / Spazio espositivo — Città", "tipo": "Personale" },
+    { "anno": "2023", "titolo": "Titolo della mostra", "sede": "Museo / Sede — Città",                 "tipo": "Collettiva" },
+    { "anno": "2021", "titolo": "Titolo della mostra", "sede": "Sede — Città",                         "tipo": "Personale" },
+    { "anno": "2018", "titolo": "Titolo della mostra", "sede": "Sede — Città",                         "tipo": "Collettiva" }
+  ],
+  "cataloghi": [
+    { "titolo": "Titolo del catalogo",      "dettagli": "Editore · 2025 · testo critico di [Nome]", "copertina": "" },
+    { "titolo": "Titolo del catalogo",      "dettagli": "Editore · 2023",                           "copertina": "" },
+    { "titolo": "Titolo della pubblicazione", "dettagli": "Rivista / Editore · 2021",               "copertina": "" },
+    { "titolo": "Titolo della pubblicazione", "dettagli": "Rivista / Editore · 2018",               "copertina": "" }
+  ]
+}

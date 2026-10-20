@@ -1,0 +1,10 @@
+{
+  "opere": [
+    { "titolo": "Titolo opera 1", "anno": 2025, "tecnica": "Olio su tela",     "misure": "80 × 100 cm",  "categoria": "Olio",          "immagine": "", "immagine_grande": "" },
+    { "titolo": "Titolo opera 2", "anno": 2024, "tecnica": "Acrilico su tela", "misure": "60 × 80 cm",   "categoria": "Acrilico",      "immagine": "", "immagine_grande": "" },
+    { "titolo": "Titolo opera 3", "anno": 2023, "tecnica": "Olio su tela",     "misure": "70 × 70 cm",   "categoria": "Olio",          "immagine": "", "immagine_grande": "" },
+    { "titolo": "Titolo opera 4", "anno": 2022, "tecnica": "Tecnica mista",    "misure": "50 × 70 cm",   "categoria": "Tecnica mista", "immagine": "", "immagine_grande": "" },
+    { "titolo": "Titolo opera 5", "anno": 2021, "tecnica": "Acrilico su tela", "misure": "100 × 100 cm", "categoria": "Acrilico",      "immagine": "", "immagine_grande": "" },
+    { "titolo": "Titolo opera 6", "anno": 2020, "tecnica": "Olio su tela",     "misure": "90 × 60 cm",   "categoria": "Olio",          "immagine": "", "immagine_grande": "" }
+  ]
+}

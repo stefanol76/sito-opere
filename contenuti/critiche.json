@@ -1,0 +1,7 @@
+{
+  "critiche": [
+    { "testo": "[Inserisci qui un passaggio della critica ricevuta: due o tre righe incisive.]", "fonte": "Nome del critico — Testata o catalogo, anno" },
+    { "testo": "[Una seconda recensione o testo critico sul tuo lavoro.]",                      "fonte": "Nome del critico — Testata o catalogo, anno" },
+    { "testo": "[Una terza citazione, tratta da una mostra o da una pubblicazione.]",           "fonte": "Nome del critico — Testata o catalogo, anno" }
+  ]
+}
