@@ -56,7 +56,7 @@ img{max-width:100%;display:block}
    tenendo l'opacità fra .06 e .12.
    =========================================================== */
 .texture{
-  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.2;
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.3;
   background-repeat:repeat;background-size:1000px auto;
   background-image:url('sfondo.svg');
 }
@@ -69,8 +69,8 @@ header,main,footer,.hero{position:relative;z-index:2}
 section{position:relative;z-index:2}
 
 /* fondi semitrasparenti, così la filigrana resta visibile */
-section.alt{background:rgba(232,224,210,.7)}
-section.solid{background:rgba(242,236,225,.7)}
+section.alt{background:rgba(232,224,210,.6)}
+section.solid{background:rgba(242,236,225,.55)}
 
 /* >>> FOTO DIVERSE PER SINGOLA SEZIONE (facoltativo)
    togli i commenti e indica le tue immagini
@@ -112,7 +112,8 @@ nav{max-width:var(--maxw);margin:0 auto;padding:17px 30px;display:flex;align-ite
    APERTURA
    =========================================================== */
 .hero{padding:clamp(70px,11vw,132px) 0 clamp(60px,9vw,104px);overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,70px);align-items:center}
+.hero .wrap{position:relative}
+.hero .testo{position:relative;z-index:2;max-width:620px}
 .eyebrow{display:flex;align-items:center;gap:14px;text-transform:uppercase;letter-spacing:.3em;font-size:.68rem;
   font-weight:600;color:var(--terra);margin-bottom:26px}
 .eyebrow::before{content:"";width:52px;height:1.5px;background:var(--terra)}
@@ -126,7 +127,9 @@ nav{max-width:var(--maxw);margin:0 auto;padding:17px 30px;display:flex;align-ite
 .btn-full:hover{background:var(--terra);border-color:var(--terra)}
 .btn-line{background:transparent;color:var(--ink)}
 .btn-line:hover{background:var(--ink);color:var(--bone)}
-.emblem{width:100%;max-width:410px;margin-inline:auto;cursor:pointer;filter:saturate(.92)}
+/* lo schizzo dell'apertura: grande, sulla destra, e scivola sotto il titolo */
+.emblem{position:absolute;right:-5%;top:50%;transform:translateY(-48%);
+  width:min(620px,56vw);z-index:1;cursor:pointer;filter:saturate(.88);opacity:.6}
 .emblem *{mix-blend-mode:multiply}
 
 /* citazione d'apertura */
@@ -142,6 +145,12 @@ nav{max-width:var(--maxw);margin:0 auto;padding:17px 30px;display:flex;align-ite
 section{padding:clamp(66px,9vw,112px) 0}
 .head{margin-bottom:clamp(38px,5.5vw,62px);border-top:1px solid var(--line);padding-top:26px;
   display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+.head{position:relative}
+/* piccolo schizzo di colore dietro il titolo di ogni sezione */
+.head>.macchia{position:absolute;left:-46px;top:-58px;width:180px;height:180px;
+  opacity:.42;pointer-events:none;z-index:0}
+.head>.macchia svg{width:100%;height:100%;display:block;mix-blend-mode:multiply}
+.head>div,.head>.num{position:relative;z-index:1}
 .head .num{font-family:'Bitter',serif;font-size:.9rem;color:var(--ochre);letter-spacing:.1em;padding-top:8px}
 .head small{display:block;text-transform:uppercase;letter-spacing:.28em;font-size:.68rem;font-weight:600;color:var(--terra);margin-bottom:12px}
 .head h2{font-size:clamp(1.9rem,4.6vw,2.9rem);font-weight:400}
@@ -263,9 +272,13 @@ footer p+p{margin-top:8px;opacity:.65}
    SCHERMI PICCOLI
    =========================================================== */
 @media(max-width:940px){
-  .hero .wrap,.bio,.two,.contact{grid-template-columns:1fr}
-  .emblem{max-width:260px;order:-1}
+  .bio,.two,.contact{grid-template-columns:1fr}
+  /* su schermi stretti lo schizzo torna sopra il testo, senza coprirlo */
+  .emblem{position:static;transform:none;width:min(340px,72vw);margin:0 auto 24px;display:block;opacity:.95}
+  .hero .wrap{display:flex;flex-direction:column}
+  .hero .testo{max-width:none}
   .portrait{max-width:300px}
+  .head>.macchia{width:150px;height:150px;left:-16px;top:-26px;opacity:.42}
 }
 @media(max-width:760px){
   body{font-size:17px}

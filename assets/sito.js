@@ -394,9 +394,26 @@ form.addEventListener('submit',async e=>{
 /* ---------- 6. AVVIO ---------- */
 const splash=$('splash');
 function disegnaSplash(){
-  splash.innerHTML=schizzo(Math.floor(Math.random()*1e9),{base:104,pennellate:3,spruzzi:26});
+  splash.innerHTML=schizzo(Math.floor(Math.random()*1e9),{base:112,pennellate:3,spruzzi:28});
 }
 disegnaSplash();
 splash.addEventListener('click',disegnaSplash);
+
+/* una macchia più piccola dietro il titolo di ogni sezione,
+   anch'essa diversa a ogni visita */
+function macchieNeiTitoli(){
+  document.querySelectorAll('.head').forEach(h=>{
+    if(h.querySelector('.macchia')) return;
+    const d=document.createElement('div');
+    d.className='macchia';
+    d.setAttribute('aria-hidden','true');
+    d.innerHTML='<svg viewBox="0 0 400 400">'
+      + schizzo(Math.floor(Math.random()*1e9),{base:118,pennellate:1,gocce:false,spruzzi:9})
+      + '</svg>';
+    h.insertBefore(d,h.firstChild);
+  });
+}
+macchieNeiTitoli();
+
 $('y').textContent=new Date().getFullYear();
 avvia();
