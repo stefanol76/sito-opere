@@ -56,7 +56,7 @@ img{max-width:100%;display:block}
    tenendo l'opacità fra .06 e .12.
    =========================================================== */
 .texture{
-  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.3;
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.2;
   background-repeat:repeat;background-size:1000px auto;
   background-image:url('sfondo.svg');
 }
@@ -69,8 +69,8 @@ header,main,footer,.hero{position:relative;z-index:2}
 section{position:relative;z-index:2}
 
 /* fondi semitrasparenti, così la filigrana resta visibile */
-section.alt{background:rgba(232,224,210,.6)}
-section.solid{background:rgba(242,236,225,.55)}
+section.alt{background:rgba(232,224,210,.7)}
+section.solid{background:rgba(242,236,225,.7)}
 
 /* >>> FOTO DIVERSE PER SINGOLA SEZIONE (facoltativo)
    togli i commenti e indica le tue immagini
