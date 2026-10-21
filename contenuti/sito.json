@@ -15,7 +15,6 @@
     "autore": "Nome Cognome"
   },
   "biografia": {
-    "ritratto": "",
     "apertura": "Nato a [città] nel [anno], vive e lavora a [città]. La pittura è il mezzo con cui ordino ciò che osservo e ciò che ricordo.",
     "paragrafi": [
       "[Primo paragrafo: la formazione, i maestri e gli incontri determinanti, l'approdo alla pittura.]",
@@ -23,9 +22,18 @@
       "[Terzo paragrafo: la ricerca attuale e ciò che desideri lasciare a chi guarda i tuoi quadri.]"
     ],
     "numeri": [
-      { "valore": "[XX]", "etichetta": "Anni di attività" },
-      { "valore": "[XX]", "etichetta": "Esposizioni" },
-      { "valore": "[XX]", "etichetta": "Opere in collezioni" }
+      {
+        "valore": "[XX]",
+        "etichetta": "Anni di attività"
+      },
+      {
+        "valore": "[XX]",
+        "etichetta": "Esposizioni"
+      },
+      {
+        "valore": "[XX]",
+        "etichetta": "Opere in collezioni"
+      }
     ]
   },
   "contatti": {
@@ -33,6 +41,6 @@
     "email": "tua@email.it",
     "studio": "[indirizzo o città] — visite su appuntamento",
     "nota_opere": "Disponibilità e quotazioni su richiesta",
-    "chiave_web3forms": "INSERISCI_LA_TUA_ACCESS_KEY"
+    "chiave_web3forms": "99382eb6-6fb5-4e1e-896c-57ef785f4eb3"
   }
 }
