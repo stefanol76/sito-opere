@@ -27,26 +27,35 @@ img{max-width:100%;display:block}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 
 /* ===========================================================
-   SFONDO — strumenti del dipingere in filigrana
+   SFONDO — strumenti del dipingere, disegnati a mano libera
    -----------------------------------------------------------
-   Qui sotto c'è un disegno al tratto (pennelli, tavolozza,
-   tubetto, barattolo, matita, tela) che resta fisso dietro
-   tutte le sezioni, appena percettibile.
+   Il disegno sta nel file "assets/sfondo.svg": pennelli,
+   tavolozze, tubetti, barattoli, matite, spatole e tele su
+   cavalletto, con il tratto irregolare e qualche velatura di
+   colore. Resta fisso dietro tutte le sezioni, appena
+   percettibile.
 
-   >>> PER USARE FOTOGRAFIE VERE:
-   1. carica le tue foto nella cartella del sito, es. "sfondi/pennelli.jpg"
-   2. in .texture sostituisci tutto il background-image con:
-         background-image:url('sfondi/pennelli.jpg');
-         background-size:cover; background-position:center;
-   3. regola l'opacità fra .06 e .12 — oltre, il testo diventa
-      faticoso da leggere.
-   Si possono anche dare foto diverse alle singole sezioni:
-   vedi le classi .bg-a / .bg-b / .bg-c più in basso.
+   >>> SE LO VUOI PIU' O MENO VISIBILE
+   cambia il valore di "opacity" qui sotto: .08 per un velo
+   appena accennato, .14 per renderlo più presente. Oltre .16
+   il testo diventa faticoso da leggere.
+
+   >>> SE LO VUOI PIU' GRANDE O PIU' FITTO
+   cambia "background-size": un valore più alto ingrandisce il
+   disegno e lo dirada, uno più basso lo rimpicciolisce e lo
+   infittisce.
+
+   >>> PER USARE FOTOGRAFIE VERE AL SUO POSTO
+   carica le foto nel sito e sostituisci la riga
+   background-image con:
+       background-image:url('../media/tuafoto.jpg');
+       background-size:cover; background-position:center;
+   tenendo l'opacità fra .06 e .12.
    =========================================================== */
 .texture{
-  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.085;
-  background-repeat:repeat;background-size:660px auto;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='660' height='660' viewBox='0 0 660 660'%3E%3Cg fill='none' stroke='%2326201c' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(48,86) rotate(-24)'%3E%3Crect x='0' y='0' width='156' height='13' rx='6.5'/%3E%3Crect x='156' y='-4' width='30' height='21' rx='3'/%3E%3Cpath d='M186 -4 l38 10.5 -38 10.5 z'/%3E%3C/g%3E%3Cg transform='translate(430,70)'%3E%3Cellipse cx='74' cy='48' rx='74' ry='48'/%3E%3Ccircle cx='104' cy='62' r='12'/%3E%3Ccircle cx='42' cy='33' r='9'/%3E%3Ccircle cx='70' cy='25' r='9'/%3E%3Ccircle cx='98' cy='31' r='9'/%3E%3Ccircle cx='31' cy='58' r='9'/%3E%3C/g%3E%3Cg transform='translate(86,352) rotate(10)'%3E%3Crect x='0' y='0' width='128' height='42' rx='9'/%3E%3Cpath d='M14 0 v42 M27 0 v42'/%3E%3Cpath d='M128 9 h15 v24 h-15'/%3E%3Crect x='143' y='5' width='19' height='32' rx='4'/%3E%3C/g%3E%3Cg transform='translate(452,330)'%3E%3Cpath d='M12 64 h92 l-9 92 h-74 z'/%3E%3Cpath d='M12 64 h92'/%3E%3Cpath d='M34 64 l7 -76 M58 64 l1 -90 M80 64 l-9 -66'/%3E%3Cpath d='M38 -12 l6 -12 M58 -26 l2 -12 M70 -2 l-4 -12'/%3E%3C/g%3E%3Cg transform='translate(250,540) rotate(-12)'%3E%3Crect x='0' y='0' width='116' height='15' rx='3'/%3E%3Cpath d='M116 0 l28 7.5 -28 7.5 z'/%3E%3Cpath d='M136 4 l0 7'/%3E%3C/g%3E%3Cg transform='translate(486,520)'%3E%3Crect x='0' y='0' width='104' height='80' rx='2'/%3E%3Crect x='9' y='9' width='86' height='62' rx='1'/%3E%3Cpath d='M18 92 l16 -12 M86 92 l-16 -12 M52 80 v20'/%3E%3C/g%3E%3Cg transform='translate(236,210) rotate(38)'%3E%3Crect x='0' y='0' width='140' height='11' rx='5.5'/%3E%3Crect x='140' y='-4' width='27' height='19' rx='3'/%3E%3Cpath d='M167 -4 l34 9.5 -34 9.5 z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.11;
+  background-repeat:repeat;background-size:1000px auto;
+  background-image:url('sfondo.svg');
 }
 /* grana leggerissima, per l'effetto stampa d'epoca */
 .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;
@@ -266,6 +275,6 @@ footer p+p{margin-top:8px;opacity:.65}
   .head .num{padding-top:0}
   .lb .pic{height:52vh}
   .lb .prev,.lb .next{font-size:2rem}
-  .texture{background-size:470px auto;opacity:.07}
+  .texture{background-size:640px auto;opacity:.1}
 }
 @media print{.texture,.grain,header,.lb,footer{display:none}body{background:#fff}}
