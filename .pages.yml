@@ -1,0 +1,116 @@
+media:
+  input: media
+  output: /media
+
+content:
+  - name: opere
+    label: Opere
+    type: file
+    path: contenuti/opere.json
+    format: json
+    fields:
+      - name: opere
+        label: Elenco delle opere
+        type: object
+        list: true
+        fields:
+          - { name: titolo,    label: Titolo,     type: string }
+          - { name: anno,      label: Anno,       type: number }
+          - { name: tecnica,   label: Tecnica,    type: string }
+          - { name: misure,    label: Misure,     type: string }
+          - { name: categoria, label: Categoria,  type: string }
+          - name: immagine
+            label: Fotografia
+            type: image
+            description: Usata nella griglia. Lato lungo circa 1200 pixel.
+          - name: immagine_grande
+            label: Fotografia ad alta risoluzione (facoltativa)
+            type: image
+            description: Mostrata quando si ingrandisce l'opera. Se la lasci vuota viene usata quella sopra.
+
+  - name: esposizioni
+    label: Esposizioni e cataloghi
+    type: file
+    path: contenuti/esposizioni.json
+    format: json
+    fields:
+      - name: mostre
+        label: Mostre
+        type: object
+        list: true
+        fields:
+          - { name: anno,   label: Anno,   type: string }
+          - { name: titolo, label: Titolo, type: string }
+          - { name: sede,   label: Sede e città, type: string }
+          - { name: tipo,   label: Tipo,   type: string }
+      - name: cataloghi
+        label: Cataloghi e pubblicazioni
+        type: object
+        list: true
+        fields:
+          - { name: titolo,    label: Titolo,    type: string }
+          - { name: dettagli,  label: Dettagli,  type: string }
+          - { name: copertina, label: Copertina, type: image }
+
+  - name: critiche
+    label: Critiche
+    type: file
+    path: contenuti/critiche.json
+    format: json
+    fields:
+      - name: critiche
+        label: Testi critici
+        type: object
+        list: true
+        fields:
+          - { name: testo, label: Passaggio citato, type: text }
+          - { name: fonte, label: Autore e fonte,   type: string }
+
+  - name: sito
+    label: Testi del sito
+    type: file
+    path: contenuti/sito.json
+    format: json
+    fields:
+      - { name: nome,  label: Nome dell'artista, type: string }
+      - { name: ruolo, label: Qualifica, type: string }
+      - { name: descrizione_sito, label: Descrizione per i motori di ricerca, type: text }
+      - name: apertura
+        label: Pagina di apertura
+        type: object
+        fields:
+          - { name: occhiello,      label: Sopratitolo, type: string }
+          - { name: titolo,         label: Titolo, type: string }
+          - { name: titolo_corsivo, label: Seguito del titolo (in corsivo colorato), type: string }
+          - { name: introduzione,   label: Testo di presentazione, type: text }
+          - { name: pulsante1,      label: Primo pulsante, type: string }
+          - { name: pulsante2,      label: Secondo pulsante, type: string }
+      - name: citazione
+        label: Frase sulla fascia scura
+        type: object
+        fields:
+          - { name: testo,  label: Frase, type: text }
+          - { name: autore, label: Firma, type: string }
+      - name: biografia
+        label: Biografia
+        type: object
+        fields:
+          - { name: ritratto, label: Ritratto, type: image }
+          - { name: apertura, label: Frase di apertura, type: text }
+          - { name: paragrafi, label: Paragrafi, type: string, list: true }
+          - name: numeri
+            label: Numeri in evidenza
+            type: object
+            list: true
+            fields:
+              - { name: valore,    label: Valore, type: string }
+              - { name: etichetta, label: Didascalia, type: string }
+      - name: contatti
+        label: Contatti
+        type: object
+        fields:
+          - { name: introduzione, label: Testo introduttivo, type: text }
+          - { name: email,        label: Email, type: string }
+          - { name: studio,       label: Studio, type: string }
+          - { name: nota_opere,   label: Nota sulle opere, type: string }
+          - { name: chiave_web3forms, label: Chiave Web3Forms (per ricevere i messaggi), type: string }
