@@ -1,14 +1,37 @@
 {
   "mostre": [
-    { "anno": "2025", "titolo": "Titolo della mostra", "sede": "Galleria / Spazio espositivo — Città", "tipo": "Personale" },
-    { "anno": "2023", "titolo": "Titolo della mostra", "sede": "Museo / Sede — Città",                 "tipo": "Collettiva" },
-    { "anno": "2021", "titolo": "Titolo della mostra", "sede": "Sede — Città",                         "tipo": "Personale" },
-    { "anno": "2018", "titolo": "Titolo della mostra", "sede": "Sede — Città",                         "tipo": "Collettiva" }
+    { "anno": "2022", "titolo": "Espressioni d'Officina", "sede": "Casa della Cultura Anita e Marco — Arcè di Pescantina (VR)", "tipo": "Collettiva" },
+    { "anno": "2021", "titolo": "Autunno in Arte", "sede": "Villafranca di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2021", "titolo": "Dante 1321-2021 Inferno", "sede": "Villafranca di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2021", "titolo": "Collettiva di Primavera", "sede": "Villafranca di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2020", "titolo": "Impressioni ed Espressioni", "sede": "Villafranca di Verona (VR)", "tipo": "Personale" },
+    { "anno": "2018", "titolo": "Omaggio a Frida", "sede": "Centro di Aggregazione Culturale — Ragusa", "tipo": "Collettiva" },
+    { "anno": "2018", "titolo": "Omaggio a Frida", "sede": "Orto Botanico Comunale — Lucca", "tipo": "Collettiva" },
+    { "anno": "2018", "titolo": "Athmosphaerae", "sede": "Centro di Aggregazione Culturale — Ragusa", "tipo": "Collettiva" },
+    { "anno": "2018", "titolo": "Settimana dell'Arte", "sede": "Istituto Canossiano — Villafranca di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2018", "titolo": "Collettiva n. 9 Soci Artisti", "sede": "Centro di Aggregazione Culturale — Ragusa", "tipo": "Collettiva" },
+    { "anno": "2018", "titolo": "Inverno in Arte", "sede": "Villafranca di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2017", "titolo": "Dal Bi al Tri Dimensionale", "sede": "Elle Galleria — Preganziol (TV)", "tipo": "Collettiva" },
+    { "anno": "2017", "titolo": "Omaggio a Frida", "sede": "Sala Manzù — Bergamo", "tipo": "Collettiva" },
+    { "anno": "2017", "titolo": "Colori e Note in Villa", "sede": "Villa Ciresola — Mozzecane (VR)", "tipo": "Collettiva" },
+    { "anno": "2017", "titolo": "Omaggio a Frida", "sede": "Palazzo della Cancelleria — Roma", "tipo": "Collettiva" },
+    { "anno": "2017", "titolo": "Collettiva n. 2 Soci Artisti", "sede": "Centro di Aggregazione Culturale — Ragusa", "tipo": "Collettiva" },
+    { "anno": "2017", "titolo": "Collettiva n. 1 Soci Artisti", "sede": "Centro di Aggregazione Culturale — Ragusa", "tipo": "Collettiva" },
+    { "anno": "2016", "titolo": "Officina d'Arte in Villa", "sede": "Villa Vecelli Cavriani — Mozzecane (VR)", "tipo": "Collettiva" },
+    { "anno": "2015", "titolo": "Aperitivo serale con Duo Folksongs", "sede": "Villa Ciresola — Mozzecane (VR)", "tipo": "Evento" },
+    { "anno": "2015", "titolo": "Villafranca all'Arte — II edizione", "sede": "Villafranca di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2009", "titolo": "Collettiva Scuola d'Arte «P. Brenzoni»", "sede": "Sant'Ambrogio di Valpolicella (VR)", "tipo": "Collettiva" },
+    { "anno": "2008", "titolo": "Collettiva Scuola d'Arte «P. Brenzoni»", "sede": "Sant'Ambrogio di Valpolicella (VR)", "tipo": "Collettiva" },
+    { "anno": "2007", "titolo": "Collettiva Scuola d'Arte «P. Brenzoni»", "sede": "Sant'Ambrogio di Valpolicella (VR)", "tipo": "Collettiva" },
+    { "anno": "2006", "titolo": "Collettiva in Arsenale", "sede": "Arsenale di Verona (VR)", "tipo": "Collettiva" },
+    { "anno": "2006", "titolo": "Collettiva Scuola d'Arte «P. Brenzoni»", "sede": "Sant'Ambrogio di Valpolicella (VR)", "tipo": "Collettiva" }
   ],
   "cataloghi": [
-    { "titolo": "Titolo del catalogo",      "dettagli": "Editore · 2025 · testo critico di [Nome]", "copertina": "" },
-    { "titolo": "Titolo del catalogo",      "dettagli": "Editore · 2023",                           "copertina": "" },
-    { "titolo": "Titolo della pubblicazione", "dettagli": "Rivista / Editore · 2021",               "copertina": "" },
-    { "titolo": "Titolo della pubblicazione", "dettagli": "Rivista / Editore · 2018",               "copertina": "" }
+    { "titolo": "Artisti 2022", "dettagli": "A cura di Silvia Landi · 2022", "copertina": "" },
+    { "titolo": "Visioni natalizie", "dettagli": "A cura di Silvia Landi · 2021", "copertina": "" },
+    { "titolo": "Artisti 2021", "dettagli": "A cura di Silvia Landi · 2021", "copertina": "" },
+    { "titolo": "Stefano Lorandi", "dettagli": "A cura di Silvia Landi · 2020", "copertina": "" },
+    { "titolo": "Catalogo dell'arte contemporanea — I Top 200", "dettagli": "Scelti da Antonio Castellana, artisti italiani e internazionali · Prima edizione · 2020", "copertina": "" },
+    { "titolo": "100 artisti emergenti su cui investire", "dettagli": "A cura di Antonio Castellana · 2019", "copertina": "" }
   ]
 }

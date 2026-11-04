@@ -1,10 +1,481 @@
 {
   "opere": [
-    { "titolo": "Titolo opera 1", "anno": 2025, "tecnica": "Olio su tela",     "misure": "80 × 100 cm",  "categoria": "Olio",          "immagine": "", "immagine_grande": "" },
-    { "titolo": "Titolo opera 2", "anno": 2024, "tecnica": "Acrilico su tela", "misure": "60 × 80 cm",   "categoria": "Acrilico",      "immagine": "", "immagine_grande": "" },
-    { "titolo": "Titolo opera 3", "anno": 2023, "tecnica": "Olio su tela",     "misure": "70 × 70 cm",   "categoria": "Olio",          "immagine": "", "immagine_grande": "" },
-    { "titolo": "Titolo opera 4", "anno": 2022, "tecnica": "Tecnica mista",    "misure": "50 × 70 cm",   "categoria": "Tecnica mista", "immagine": "", "immagine_grande": "" },
-    { "titolo": "Titolo opera 5", "anno": 2021, "tecnica": "Acrilico su tela", "misure": "100 × 100 cm", "categoria": "Acrilico",      "immagine": "", "immagine_grande": "" },
-    { "titolo": "Titolo opera 6", "anno": 2020, "tecnica": "Olio su tela",     "misure": "90 × 60 cm",   "categoria": "Olio",          "immagine": "", "immagine_grande": "" }
+    {
+      "titolo": "Angolo di campagna in pianura",
+      "anno": 2022,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 70 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Sentiero d'inverno in Lessinia",
+      "anno": 2022,
+      "tecnica": "Olio e pastelli ad olio su tela",
+      "misure": "70 × 50 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta N.3",
+      "anno": 2021,
+      "tecnica": "Olio su pannello",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Borgo con ultima neve",
+      "anno": 2021,
+      "tecnica": "Pastelli ad olio su pannello",
+      "misure": "35 × 45 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Omaggio alla pittura inglese di fine 1800",
+      "anno": 2020,
+      "tecnica": "Olio su tela",
+      "misure": "30 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Contrada",
+      "anno": 2020,
+      "tecnica": "Olio su cartone",
+      "misure": "50 × 70 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta N.1",
+      "anno": 2020,
+      "tecnica": "Pastelli ad olio su masonite",
+      "misure": "30 × 40 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Paesaggio al Passo del Tonale",
+      "anno": 2019,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta con frutta",
+      "anno": 2019,
+      "tecnica": "Olio su pannello",
+      "misure": "50 × 30 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Guerra",
+      "anno": 2019,
+      "tecnica": "Pastelli ad olio su tela trattata",
+      "misure": "40 × 50 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Il libro rosso",
+      "anno": 2019,
+      "tecnica": "Pastelli ad olio su masonite trattata",
+      "misure": "40 × 40 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "La Passione",
+      "anno": 2019,
+      "tecnica": "Pastelli ad olio su masonite trattata",
+      "misure": "42 × 30 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta N.2",
+      "anno": 2019,
+      "tecnica": "Pastelli ad olio su masonite",
+      "misure": "50 × 50 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Fosso di campagna in inverno",
+      "anno": 2018,
+      "tecnica": "Olio su tavola",
+      "misure": "82 × 60 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Campo di ciliegi",
+      "anno": 2018,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Pascolo",
+      "anno": 2018,
+      "tecnica": "Olio su tela",
+      "misure": "60 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Maternità",
+      "anno": 2018,
+      "tecnica": "Pastelli ad olio su tavola trattata con colori ad olio e acrilici",
+      "misure": "50 × 70 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Lottatrice",
+      "anno": 2017,
+      "tecnica": "Olio e stucco su faesite",
+      "misure": "70 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Viso di donna (studio)",
+      "anno": 2017,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 35 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Campagna a Palazzolo",
+      "anno": 2017,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Donna",
+      "anno": 2017,
+      "tecnica": "Olio su faesite",
+      "misure": "75 × 35 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "A Tormine in un tardo pomeriggio d'estate",
+      "anno": 2017,
+      "tecnica": "Olio su tela",
+      "misure": "60 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Sentiero in autunno",
+      "anno": 2017,
+      "tecnica": "Olio su masonite",
+      "misure": "58 × 42 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Frida, i colori del dolore",
+      "anno": 2017,
+      "tecnica": "Pastelli ad olio su masonite trattata con colori ad olio e acrilici",
+      "misure": "50 × 35 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Campi di grano",
+      "anno": 2016,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Case rurali",
+      "anno": 2016,
+      "tecnica": "Olio su tela",
+      "misure": "70 × 50 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Castello Scaligero di Villafranca",
+      "anno": 2016,
+      "tecnica": "Pastelli ad olio su supporto trattato con colori olio e acrilici",
+      "misure": "80 × 80 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Colori d'autunno",
+      "anno": 2016,
+      "tecnica": "Pastelli ad olio su masonite trattata con colori ad olio e acrilici",
+      "misure": "40 × 30 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Venezia",
+      "anno": 2016,
+      "tecnica": "Pastelli ad olio su masonite trattata con colori ad olio e acrilici",
+      "misure": "40 × 30 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Antiche rovine",
+      "anno": 2016,
+      "tecnica": "Pastelli ad olio su masonite trattata con colori ad olio e acrilici",
+      "misure": "40 × 30 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Autunno in Valpolicella",
+      "anno": 2015,
+      "tecnica": "Olio su tela",
+      "misure": "",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Case a sera",
+      "anno": 2015,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Mare prima della burrasca",
+      "anno": 2015,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Verso il tramonto",
+      "anno": 2015,
+      "tecnica": "Olio su tela",
+      "misure": "60 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Pensieri",
+      "anno": 2015,
+      "tecnica": "Olio su tela",
+      "misure": "70 × 50 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Vele sul lago",
+      "anno": 2015,
+      "tecnica": "Pastelli ad olio su compensato trattato.",
+      "misure": "70 × 50 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Papaveri in Toscana",
+      "anno": 2015,
+      "tecnica": "Gessi e olio su tela",
+      "misure": "70 × 50 cm",
+      "categoria": "Gessi colorati",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Paese di collina",
+      "anno": 2015,
+      "tecnica": "Gessi e olio su tela",
+      "misure": "40 × 30 cm",
+      "categoria": "Gessi colorati",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Campagna di mattino",
+      "anno": 2014,
+      "tecnica": "Olio su tela",
+      "misure": "40 × 25 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Fuori dalla tempesta",
+      "anno": 2014,
+      "tecnica": "Olio su cartone telato",
+      "misure": "45 × 30 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Vecchio borgo",
+      "anno": 2014,
+      "tecnica": "Pastelli ad olio su compensato trattato",
+      "misure": "82 × 58 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta con frutta e vino",
+      "anno": 2014,
+      "tecnica": "Gessi e olio su masonite",
+      "misure": "40 × 20 cm",
+      "categoria": "Gessi colorati",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta con teiera",
+      "anno": 2013,
+      "tecnica": "Olio su tela",
+      "misure": "20 × 30 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta con fiori e limoni",
+      "anno": 2013,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 50 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Natura morta con rose",
+      "anno": 2013,
+      "tecnica": "Gessi e olio su tela",
+      "misure": "40 × 30 cm",
+      "categoria": "Gessi colorati",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Composizione di natura morta",
+      "anno": 2012,
+      "tecnica": "Pastelli ad olio su masonite trattata",
+      "misure": "40 × 40 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Girasoli, omaggio a V. Van Gogh",
+      "anno": 2011,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Barca",
+      "anno": 2010,
+      "tecnica": "Pastelli ad olio su cartone telato trattato",
+      "misure": "40 × 30 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Borghetto sul Mincio",
+      "anno": 2010,
+      "tecnica": "Pastelli ad olio su cartone telato trattato",
+      "misure": "35 × 30 cm",
+      "categoria": "Tecnica mista",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Toscana",
+      "anno": 2009,
+      "tecnica": "Gessi, acrilici e olio su tela",
+      "misure": "60 × 50 cm",
+      "categoria": "Gessi colorati",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Borgo sul mare",
+      "anno": 2009,
+      "tecnica": "Gessi, acrilici e olio su tela",
+      "misure": "70 × 50 cm",
+      "categoria": "Gessi colorati",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Ponte Pietra",
+      "anno": 2007,
+      "tecnica": "Olio su tela",
+      "misure": "50 × 40 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    },
+    {
+      "titolo": "Scorcio di campagna",
+      "anno": 2007,
+      "tecnica": "Olio su tela",
+      "misure": "40 × 30 cm",
+      "categoria": "Olio",
+      "immagine": "",
+      "immagine_grande": ""
+    }
   ]
 }

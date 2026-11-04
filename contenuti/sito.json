@@ -1,46 +1,39 @@
 {
-  "nome": "Nome Cognome",
+  "nome": "Stefano Lorandi",
   "ruolo": "Pittore",
-  "descrizione_sito": "Sito ufficiale del pittore Nome Cognome: galleria delle opere, biografia, esposizioni, cataloghi, critiche e contatti.",
+  "descrizione_sito": "Sito ufficiale del pittore Stefano Lorandi: opere a olio, a tecnica mista e a gessi colorati, biografia, esposizioni, cataloghi, critiche e contatti.",
   "apertura": {
-    "occhiello": "Opere originali · dal [anno]",
-    "titolo": "La pittura come",
-    "titolo_corsivo": "forma del tempo",
-    "introduzione": "Il lavoro di Nome Cognome attraversa [numero] anni di ricerca sul colore e sulla materia: olio, acrilico e tecniche miste, tra paesaggio interiore e osservazione del reale.",
+    "occhiello": "Pittore · Mozzecane, Verona",
+    "titolo": "Reminiscenze di opere moderne,",
+    "titolo_corsivo": "rivisitate nel colore e nel tratto",
+    "introduzione": "Stile e suggestioni personali subiscono l'influenza dei grandi autori impressionisti del passato, fino a correnti del primo Novecento italiano come quella dei Macchiaioli: influenze filtrate dagli studi che mi accompagnano fin da bambino.",
     "pulsante1": "Sfoglia le opere",
     "pulsante2": "Richiedi informazioni"
   },
   "citazione": {
-    "testo": "[Una frase tua, o di un critico, che racconti in due righe il senso del tuo lavoro.]",
-    "autore": "Nome Cognome"
+    "testo": "Dallo spunto reale, il piacere del colore e della visione.",
+    "autore": "Prof. Elvio Campi"
   },
   "biografia": {
-    "apertura": "Nato a [città] nel [anno], vive e lavora a [città]. La pittura è il mezzo con cui ordino ciò che osservo e ciò che ricordo.",
+    "ritratto": "",
+    "apertura": "Nato a Bussolengo, Verona, nel 1976, ho iniziato la mia formazione artistica molto presto, attraverso un percorso trentennale parallelo a quello professionale.",
     "paragrafi": [
-      "[Primo paragrafo: la formazione, i maestri e gli incontri determinanti, l'approdo alla pittura.]",
-      "[Secondo paragrafo: i materiali e il metodo di lavoro, i cicli di opere, i temi ricorrenti.]",
-      "[Terzo paragrafo: la ricerca attuale e ciò che desideri lasciare a chi guarda i tuoi quadri.]"
+      "Nelle mie opere, stile e suggestioni personali subiscono l'influenza dei grandi autori impressionisti del passato, fino a correnti del primo Novecento italiano come quella dei Macchiaioli: influenze filtrate dagli studi che mi accompagnano fin da bambino.",
+      "Dal 2005 ho migliorato e affinato le tecniche di disegno e di pittura frequentando i corsi della scuola d'arte «P. Brenzoni» di Sant'Ambrogio di Valpolicella, come allievo delle pittrici dell'Accademia di Belle Arti «Cignaroli» Laura Poffe e Iva Recchia. Qui mi sono specializzato nelle tecniche a olio e acrilico, sperimentando nuovi percorsi. Ho vinto premi, anche all'interno della stessa scuola d'arte, e partecipato a diverse mostre collettive nazionali.",
+      "Nel 2014 ho partecipato alla fondazione del gruppo artistico Officina d'Arte Mozzecane, che tuttora frequento e che è diventato fucina di artisti locali: ci si trova per lavorare assieme e per promuovere e organizzare manifestazioni ed esposizioni pittoriche.",
+      "Vivo e lavoro a Mozzecane, Verona. Realizzo quadri su commissione."
     ],
     "numeri": [
-      {
-        "valore": "[XX]",
-        "etichetta": "Anni di attività"
-      },
-      {
-        "valore": "[XX]",
-        "etichetta": "Esposizioni"
-      },
-      {
-        "valore": "[XX]",
-        "etichetta": "Opere in collezioni"
-      }
+      { "valore": "30+", "etichetta": "Anni di pittura" },
+      { "valore": "25", "etichetta": "Esposizioni" },
+      { "valore": "53", "etichetta": "Opere in galleria" }
     ]
   },
   "contatti": {
-    "introduzione": "Compila il modulo: il messaggio arriverà direttamente nella mia casella di posta e riceverai risposta di norma entro pochi giorni.",
-    "email": "tua@email.it",
-    "studio": "[indirizzo o città] — visite su appuntamento",
-    "nota_opere": "Disponibilità e quotazioni su richiesta",
-    "chiave_web3forms": "99382eb6-6fb5-4e1e-896c-57ef785f4eb3"
+    "introduzione": "Per informazioni sulle opere, richieste di commissione, inviti a mostre o collaborazioni: compila il modulo e il messaggio arriverà direttamente nella mia casella di posta.",
+    "email": "stefanolorandi76@gmail.com",
+    "studio": "Mozzecane (Verona)",
+    "nota_opere": "Realizzo quadri su commissione",
+    "chiave_web3forms": "INSERISCI_LA_TUA_ACCESS_KEY"
   }
 }

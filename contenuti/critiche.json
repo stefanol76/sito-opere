@@ -1,7 +1,16 @@
 {
   "critiche": [
-    { "testo": "[Inserisci qui un passaggio della critica ricevuta: due o tre righe incisive.]", "fonte": "Nome del critico — Testata o catalogo, anno" },
-    { "testo": "[Una seconda recensione o testo critico sul tuo lavoro.]",                      "fonte": "Nome del critico — Testata o catalogo, anno" },
-    { "testo": "[Una terza citazione, tratta da una mostra o da una pubblicazione.]",           "fonte": "Nome del critico — Testata o catalogo, anno" }
+    {
+      "testo": "Per Stefano Lorandi l'arte, fin dai tempi antichi, dà all'uomo la possibilità di concretizzare visivamente la sua interiorità. Tale proprietà la si ritrova nelle opere dell'artista. Egli infatti, grazie ai suoi paesaggi naturali, fa emergere un'atmosfera serena e pacifica che induce lo spettatore in un mondo romantico ricco di emozioni e di stati d'animo come quelli provati dall'artista stesso.",
+      "fonte": "Siro Perin — Critico d'arte"
+    },
+    {
+      "testo": "Artista pervaso da urgenza compositiva, vigore passionale, ricerca di immagini significative e da una modalità pittorica di tipo impressionista, caricata nell'uso di colori più saturi e corposi, sempre dominati da un sapiente equilibrio cromatico e morbidezza tonale. Il tutto rivolto a ottenere, dallo spunto reale, il piacere del colore e della visione.",
+      "fonte": "Prof. Elvio Campi"
+    },
+    {
+      "testo": "Per esempio nel dipinto dal titolo «Contrada», un olio su cartone di misura media, Lorandi crea la forma attraverso macchie di colore sovrapposte, la luce ne delinea i contorni e si strizza l'occhio alla storia creativa della seconda metà dell'Ottocento, rivista e rivisitata in chiave contemporanea. In «Borgo con ultima neve» l'accostamento cromatico è sapientemente distribuito, calibrando al meglio le tonalità calde con quelle fredde: l'autore stimola i sensi dello spettatore.",
+      "fonte": "Dott.ssa Maria Grazia Londrino — Critico d'arte"
+    }
   ]
 }
